@@ -4,17 +4,20 @@
     <title>Pegasus - Home</title>
     <link rel="stylesheet" type="text/css" href="stylesheets/pegasus.css">
     <script src="javascripts/main.js"></script>
-     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="javascripts/marquee.js"></script>
+     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
   </head>
   <body>
-    <div class="nav">
+    <div class="nav shadow1">
       <ul class="nav-bar">
         <li class="nav-bar-item"><a href="#">Test</a></li>
         <li class="nav-bar-item"><a href="#">Test</a></li>
       </ul>
     </div>
     <div class="announcments">
-    	<p>This is a moving announcment</p>
+    	<marquee onmouseover="this.stop();" onmouseout="this.start();">
+         <P>Holding the mouse over this marquee stops it from scrolling.</P>
+      </marquee>
     </div>
   </body>
 </html>
