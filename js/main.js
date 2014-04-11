@@ -1,3 +1,6 @@
+/**
+* author Remy Sharp
+**/
 (function ($) {
     $.fn.marquee = function (klass) {
         var newMarquee = [],
@@ -125,3 +128,12 @@
         return $(newMarquee);
     };
 }(jQuery));
+/** 
+* End of Remy Sharp's code
+**/
+
+
+
+
+
+
