@@ -2,12 +2,11 @@
 <html>
   <head>
     <title>Pegasus - Home</title>
-    <link rel="stylesheet" type="text/css" href="stylesheets/pegasus.css">
-    <script src="javascripts/main.js"></script>
-    <script src="javascripts/marquee.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/pegasus.css">
+    <script src="js/main.js"></script>
      <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
   </head>
-  <body>
+  <body style="background-image: url(imgs/background.png);">
     <div class="nav shadow1">
       <ul class="nav-bar">
         <li class="nav-bar-item"><a href="#">Test</a></li>
@@ -15,9 +14,10 @@
       </ul>
     </div>
     <div class="announcments">
-    	<marquee onmouseover="this.stop();" onmouseout="this.start();">
+    	<marquee class="ann" behavior="scroll" direction="left" scrollamount="2" onmouseover="this.stop();" onmouseout="this.start();">
          <P>Holding the mouse over this marquee stops it from scrolling.</P>
       </marquee>
     </div>
+    <div style="height:1000px;"></div>
   </body>
 </html>
