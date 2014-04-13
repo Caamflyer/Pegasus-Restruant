@@ -12,8 +12,10 @@ input,button,select,textarea{font-family:inherit;font-size:inherit;line-height:i
 .opacity{opacity: .98;}
 .circletwit{color: #A4A4A4;} .circletwit:hover{color: #55acee;}
 .circlef{color: #A4A4A4;} .circlef:hover{color: #47639e;}
+.circlem{color: #A4A4A4;} .circlem:hover{color: #bb0f09;}
 .white{color: #fff;}
 .bg-gray{background-color: #e8e8e8; position: fixed;}
+.navmid{margin-top: 7px;}
 .announcments{height: 20px; width: 100%; margin-top: 50px;}
 .ann{height: 18px; margin-left: 24%; width: 52%;} .ann ul,li{margin-top: 0px;} .ann li{display: inline; margin-right: 100px;}
 
