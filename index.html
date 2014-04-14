@@ -14,6 +14,24 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script type="text/javascript">
+      var wss_i = 0;
+      var wss_array = ["Monday / Thursday - 6:30 am - 8:00 pm","Friday - 6:30 am - 9:00 pm","Saturday - 7:30 am - 9:00 pm","Sunday - 7:30 am - 2:00 pm"];
+      var wss_elem;
+      function wssNext(){
+        wss_i++;
+         wss_elem.style.opacity = 0;
+          if(wss_i > (wss_array.length - 1)){
+             wss_i = 0;
+         }
+          setTimeout('wssSlide()',1000);
+      }
+      function wssSlide(){
+         wss_elem.innerHTML = wss_array[wss_i];
+         wss_elem.style.opacity = 1;
+          setTimeout('wssNext()',5000);
+      }
+    </script>
   </head>
   <body>
     <nav class="navbar navbar-default navbar-fixed-top opacity" role="navigation">
@@ -29,20 +47,28 @@
       </div>
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Link</a></li>
-          <li><a href="#">Link</a></li>
+          <li class="active"><a href="#">Menu</a></li>
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us <b class="caret"></b></a>
               <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li class="divider"></li>
-              <li><a href="#">Separated link</a></li>
-              <li class="divider"></li>
-              <li><a href="#">One more separated link</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Location</a></li>
+              <li><a href="#">Hours of Operation</a></li>
             </ul>
           </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+              <li><a href="#">Happy Hour</a></li>
+              <li><a href="#">Breakfast</a></li>
+              <li><a href="#">Appetizers</a></li>
+              <li><a href="#">Lunch</a></li>
+              <li><a href="#">Dinner</a></li>
+              <li><a href="#">Wine List</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Catering</a></li>
+          <li><a href="#">Gallery</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right navmid">
           <li><span class="fa-stack fa-lg circletwit"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x white"></i></span></li>
@@ -53,15 +79,19 @@
     </div>
   </nav>
   <div class="bg-gray announcments">
-      <marquee class="ann" behavior="scroll" direction="left" scrollamount="2" onmouseover="this.stop();" onmouseout="this.start();">
+    <div class="nav-loc">313 Jerry Street, Castle Rock, Colorado, 80104</div>
+    <marquee class="ann" behavior="scroll" direction="left" scrollamount="2" onmouseover="this.stop();" onmouseout="this.start();">
          <ul>
           <li>This is one announcement.</li>
           <li>This is another announcement.</li>
           <li>Read the next line.</li>
           <li>What did I say???</li>
          </ul>  
-      </marquee></div>
-    
+    </marquee>
+    <span id="nav-hours"></span>
+    <script>wss_elem = document.getElementById("nav-hours"); wssSlide(); </script>
+  </div>
+
 <div style="height:1000px;"></div>
 
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>

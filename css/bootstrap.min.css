@@ -17,9 +17,9 @@ input,button,select,textarea{font-family:inherit;font-size:inherit;line-height:i
 .bg-gray{background-color: #e8e8e8; position: fixed;}
 .navmid{margin-top: 7px;}
 .announcments{height: 20px; width: 100%; margin-top: 50px;}
-.ann{height: 18px; margin-left: 24%; width: 52%;} .ann ul,li{margin-top: 0px;} .ann li{display: inline; margin-right: 100px;}
+.ann{display: inline; height: 18px; margin-left: 25%; width: 50%; -webkit-box-shadow: 4px 0 10px -3px #000,  -4px 0 10px -3px #000;border-left: 1px solid rgba(0, 0, 0, 0.44); border-right: 1px solid rgba(0, 0, 0, 0.44);} .ann ul,li{margin-top: 0px;} .ann li{display: inline; margin-right: 100px;}
+.nav-loc{position: absolute; margin-left: 5px; font-weight: 200; display: inline;}
+#nav-hours{position: absolute; opacity:0; -webkit-transition:opacity 1.0s linear 0s; transition:opacity 1.0s linear 0s; margin-left: 35px; display: inline; font-weight: 200;}
 
 
-
-
-
+@media only screen and (max-width: 1279px){.nav-loc{display: none;} #nav-hours{display: none;} .ann{margin-left: 0%; width: 100%;}}
