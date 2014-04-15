@@ -77,23 +77,52 @@
         </ul>
       </div>
     </div>
-  </nav>
-  <div class="bg-gray announcments">
-    <div class="nav-loc">313 Jerry Street, Castle Rock, Colorado, 80104</div>
-    <marquee class="ann" behavior="scroll" direction="left" scrollamount="2" onmouseover="this.stop();" onmouseout="this.start();">
-         <ul>
-          <li>This is one announcement.</li>
-          <li>This is another announcement.</li>
-          <li>Read the next line.</li>
-          <li>What did I say???</li>
-         </ul>  
-    </marquee>
-    <span id="nav-hours"></span>
-    <script>wss_elem = document.getElementById("nav-hours"); wssSlide(); </script>
+    </nav>
+    <div class="bg-gray announcments">
+      <div class="nav-loc"><a href="#" class="link"><span data-title="313 Jerry Street, Castle Rock, Colorado, 80104">313 Jerry Street, Castle Rock, Colorado, 80104</span></a></div>
+      <span id="nav-hours"></span>
+      <script>wss_elem = document.getElementById("nav-hours"); wssSlide(); </script>
+    </div>
+  <div class="container">
+    <div class="top">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="http://placehold.it/950x400" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="http://placehold.it/950x400" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="http://placehold.it/950x400" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+            
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="fa fa-arrow-circle-left cont"></span></a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="fa fa-arrow-circle-right cont"></span></a>
+    </div>
+    </div>
   </div>
-
-<div style="height:1000px;"></div>
-
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
   </body>
